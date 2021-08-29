@@ -1,0 +1,144 @@
+.attribution {
+    font-size: 11px;
+    margin-top: 20px;
+    text-align: left;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --color-primary-pale-blue: hsl(225, 100%, 94%);
+    --color-primary-bright-blue: hsl(245, 75%, 52%);
+    --color-neutral-pale-blue: hsl(225, 100%, 98%);
+    --color-neutral-desaturated-blue: hsl(224, 23%, 55%);
+    --color-dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, abbr, article, aside, audio, blockquote, button, canvas, code, div, dl, dt, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, iframe, img, input, label, legend, li, nav, object, ol, option, p, pre, q, section, select, table, tbody, td, tfoot, th, thead, tr, ul, video {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: contain;
+    background-color: var(--color-neutral-pale-blue);
+    background-image: url('images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-image: url('images/pattern-background-desktop.svg');
+    }
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.component {
+    max-width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+}
+
+.component img {
+    max-width: 300px;
+}
+
+
+.content {
+    padding: 15px 10px;
+}
+
+.summary p {
+    margin: 10px;
+}
+
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin: 30px 5px;
+    background-color: var(--color-neutral-pale-blue);
+    padding: 5px 10px;
+    border-radius: 9px;
+}
+
+.plan > div {
+    flex: 1;
+    text-align: left;
+    margin: 10px;
+}
+
+.small-font {
+    font-size: 0.9rem;
+}
+
+.plan > a {
+    color: var(--color-primary-bright-blue);
+}
+
+.plan img {
+    width: 30px;
+    height: 30px;
+}
+
+.order-action {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-action button {
+    margin: 10px;
+    padding: 10px 0;
+    border-radius: 9px;
+    border: none;
+}
+
+.order-action button:hover {
+    cursor: pointer;
+
+}
+
+#payment {
+    background-color: var(--color-primary-bright-blue);
+    color: white;
+}
+
+#payment:hover {
+    box-shadow: 2px 2px 4px lightgrey;
+    background-color: var(--color-neutral-desaturated-blue);
+}
+
+#cancel {
+    background-color: transparent;
+}
+
+.light-text {
+    color: grey;
+    font-weight: lighter;
+}
+
+
